@@ -124,7 +124,7 @@ export const Experience = ({ section, sections }) => {
   return (
     <>
 
-      <CameraControls ref={controlRef}
+      {/* <CameraControls ref={controlRef}
         mouseButtons={{
           left: 0,   // Disables rotate
           middle: 0, // Disables zoom
@@ -137,6 +137,9 @@ export const Experience = ({ section, sections }) => {
           two: 0,
           three: 0,
         }}
+      /> */}
+
+      <CameraControls ref={controlRef}
       />
       <mesh ref={box} visible={false}>
         <boxGeometry args={[0.5, 1, 0.2]} />
